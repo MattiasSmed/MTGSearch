@@ -14,7 +14,79 @@
         android:layout_height="wrap_content"
         android:text="Search"
         android:id="@+id/searchActivityButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardName"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="39dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardText"
+        android:layout_below="@+id/cardName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/cardName"
+        android:layout_alignEnd="@+id/cardName" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="White"
+        android:id="@+id/white"
+        android:layout_above="@+id/searchActivityButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue"
+        android:id="@+id/blue"
+        android:layout_above="@+id/searchActivityButton"
+        android:layout_toRightOf="@+id/white"
+        android:layout_toEndOf="@+id/white"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Black"
+        android:id="@+id/black"
+        android:layout_alignBottom="@+id/blue"
+        android:layout_toRightOf="@+id/blue"
+        android:layout_toEndOf="@+id/blue"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red"
+        android:id="@+id/red"
+        android:checked="false"
+        android:layout_alignTop="@+id/green"
+        android:layout_toRightOf="@+id/black"
+        android:layout_toEndOf="@+id/black" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green"
+        android:id="@+id/green"
+        android:layout_above="@+id/searchActivityButton"
+        android:layout_toRightOf="@+id/red"
+        android:layout_toEndOf="@+id/red"
+        android:checked="false" />
+
 </RelativeLayout>
